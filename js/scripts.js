@@ -22,3 +22,14 @@ function beepBoop(userNum){
   }
 }
 
+$(document).ready(function() {
+  $("#formRoger").submit(function(event){
+    event.preventDefault();
+    $("#formRoger").hide();
+    const UserNum = $("input#num").val();
+    const BeepBoop = beepBoop(userNumber)
+    $(".name").text(nameInput);
+    $("#output").html(BeepBoop);
+  });
+});
+
