@@ -1,11 +1,11 @@
 
-function beepBoop(i,username){
+function beepBoop(i,userName){
   let strNum= i.toString();
   let strNumArray=strNum.split("");
   let outputStr = " "
-    
+  
   if(strNumArray.includes("3")){
-      return outputStr = `"Wont you be my neighbor? , ${username} "` 
+    return outputStr = `"Wont you be my neighbor? , ${userName} "` 
   }
   else if(strNumArray.includes("2")){
     return  outputStr = `"Boop!"`
@@ -18,20 +18,19 @@ function beepBoop(i,username){
   }
 }
 
-function ForwardLoop(userNum,username){
+function ForwardLoop(userNum,userName){
   let outputStrArray = [];
-
   for ( i = 0; i <= userNum ; i++){
-    let outputStr = beepBoop(i,username)
+    let outputStr = beepBoop(i,userName)
     outputStrArray.push(outputStr)
   }
   return outputStrArray.join(  "  ,  "  )
 }
 
-function ReverseLoop(userNum,username){
+function ReverseLoop(userNum,userName){
   let outputStrArray = [];
   for (let i = userNum; i >= 0; i--){
-    let outputStr=beepBoop(i,username)
+    let outputStr=beepBoop(i,userName)
     outputStrArray.push(outputStr)
   }  
   return outputStrArray.join(  "  ,  "  )
