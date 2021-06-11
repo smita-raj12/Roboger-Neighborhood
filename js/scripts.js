@@ -1,7 +1,3 @@
-function isNumber(userNum){
-  return (isNaN(userNum) === 0 || userNum.length === 0)
-}
-
 function beepBoop(i){
   let strNum= i.toString();
   let strNumArray=strNum.split("");
@@ -22,13 +18,10 @@ function beepBoop(i){
 }
 
 function ForwardLoop(userNum){
-  if (!isNumber(userNum)){
-    return " "
-  }
   let outputStrArray = [];
 
   for ( i = 0; i <= userNum ; i++){
-    let outputStr=beepBoop(i,outputStrArray)
+    let outputStr = beepBoop(i,outputStrArray)
     outputStrArray.push(outputStr)
   }
   return outputStrArray.join(  "  ,  "  )
@@ -39,7 +32,6 @@ function ReverseLoop(userNum){
   for (let i = userNum; i >= 0; i--){
     let outputStr=beepBoop(i,outputStrArray)
     outputStrArray.push(outputStr)
-    console.log("forwardloop",outputStrArray)
   }  
   return outputStrArray.join(  "  ,  "  )
 }
