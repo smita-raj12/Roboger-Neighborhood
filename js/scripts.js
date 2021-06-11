@@ -19,17 +19,16 @@ function beepBoop(userNum){
       outputStr = strNumArray.toString();
     }
     outputStrArray.push(outputStr)
-    
   }
   return outputStrArray.join( "  ,  ")
 }
+
 
 $(document).ready(function() {
   $("#formRoger").submit(function(event){
     event.preventDefault();
     $("#formRoger").hide();
     const UserNum = $("input#num").val();
-    //$(".num").text(UserNum);
     const BeepBoop = beepBoop(UserNum)
     $("#output").html(BeepBoop);
   });
