@@ -7,19 +7,21 @@ function beepBoop(userNum){
     let outputStr = " "
     
     if(strNumArray.includes("3")){
-      outputStr = "Wont you be my neighbor" 
+      outputStr = `"Wont you be my neighbor?"` 
     }
     else if(strNumArray.includes("2")){
-      outputStr = "Boop" 
+      outputStr = `"Boop!"`
     }
     else if(strNumArray.includes("1")){
-      outputStr = "Beep" 
+      outputStr = `"Beep!"` 
     }
     else {
       outputStr = strNumArray.toString();
     }
     outputStrArray.push(outputStr)
+    
   }
+  return outputStrArray.join( "  ,  ")
 }
 
 $(document).ready(function() {
@@ -27,8 +29,8 @@ $(document).ready(function() {
     event.preventDefault();
     $("#formRoger").hide();
     const UserNum = $("input#num").val();
-    $(".num").text(UserNum);
-    const BeepBoop = beepBoop(userNumber)
+    //$(".num").text(UserNum);
+    const BeepBoop = beepBoop(UserNum)
     $("#output").html(BeepBoop);
   });
 });
