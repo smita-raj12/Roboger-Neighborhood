@@ -1,3 +1,15 @@
-#output{
-  display: none;
+body{
+  background-color:rgba(63, 118, 236, 0.233);
+}  
+h1{
+  text-align: center;
+  color: brown;
+}
+h3{
+  text-align: left;
+  color: darkred;
+  padding-top:20px ;
+}
+.form-class{
+  padding-top: 25px;
 }

@@ -20,17 +20,16 @@ function beepBoop(userNum){
     }
     outputStrArray.push(outputStr)
   }
-  return outputStrArray.join( "  ,  ")
+  return outputStrArray.join(  "  ,  " )
 }
 
 
 $(document).ready(function() {
   $("#formRoger").submit(function(event){
     event.preventDefault();
-    $("#formRoger").hide();
     const UserNum = $("input#num").val();
     const BeepBoop = beepBoop(UserNum)
-    $("#output").html(BeepBoop);
+    $(".output").html(BeepBoop);
   });
 });
 
