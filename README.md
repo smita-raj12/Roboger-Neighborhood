@@ -1,3 +1,55 @@
+## Application Name:
+
+Mr. Roboger's Neighborhood
+
+## Name of contributor:
+
+Smita   
+
+## Brief description of the project:
+
+This a web application that takes a number from a user and returns a range of numbers from 0 to the user inputted number with the following exceptions:
+
+1. Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
+2. Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
+3. Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"
+
+## Technologies used:
+
+1. HTML and CSS.
+
+2. jQuery and Javascript.
+
+3. Bootstrap.
+    
+
+## Complete setup/installation instructions:
+
+* [Live site](https://smita-raj12.github.io/Roboger-Neighborhood 
+       to my project       
+
+* Clone this repository to your desktop.
+
+* Navigate to the directory.
+
+* Open program/index.html on your choice of code editor.
+
+* If you are using Vscode, open the command palette and search for `live server: open with live server`
+
+
+## Known bugs
+
+`None.`     
+
+## License information with a copyright and date:
+
+ [MIT](https://opensource.org/licenses/MIT)
+
+## Contact information:
+   
+* EmailId:smita.raj12@gmail.com
+
+
 # Tests
 
 ## beepBoop()

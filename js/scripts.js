@@ -20,7 +20,7 @@ function beepBoop(userNum){
     }
     outputStrArray.push(outputStr)
   }
-  return outputStrArray.join(  "  ,  " )
+  return outputStrArray.join(  "  ,  "  )
 }
 
 
