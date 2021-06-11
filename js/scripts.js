@@ -20,6 +20,5 @@ function beepBoop(userNum){
     }
     outputStrArray.push(outputStr)
   }
-  
 }
 
