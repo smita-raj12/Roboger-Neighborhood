@@ -27,8 +27,8 @@ $(document).ready(function() {
     event.preventDefault();
     $("#formRoger").hide();
     const UserNum = $("input#num").val();
+    $(".num").text(UserNum);
     const BeepBoop = beepBoop(userNumber)
-    $(".name").text(nameInput);
     $("#output").html(BeepBoop);
   });
 });
