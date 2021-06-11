@@ -5,7 +5,7 @@ function beepBoop(i,username){
   let outputStr = " "
     
   if(strNumArray.includes("3")){
-      return outputStr = `"Wont you be my neighbor? ${username} "` 
+      return outputStr = `"Wont you be my neighbor? , ${username} "` 
   }
   else if(strNumArray.includes("2")){
     return  outputStr = `"Boop!"`
