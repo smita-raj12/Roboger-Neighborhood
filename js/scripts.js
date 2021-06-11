@@ -1,5 +1,6 @@
 function beepBoop(userNum){
   let outputStrArray = [];
+  
   for (let i = 0; i <= userNum ; i++){
     let strNum= i.toString();
     let strNumArray=strNum.split("");
