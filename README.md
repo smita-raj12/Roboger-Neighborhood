@@ -14,6 +14,10 @@ This a web application that takes a number from a user and returns a range of nu
 2. Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
 3. Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"
 
+## Live Site:
+
+[Link](https://smita-raj12.github.io/Roboger-Neighborhood)
+
 ## Technologies used:
 
 1. HTML and CSS.
@@ -25,8 +29,7 @@ This a web application that takes a number from a user and returns a range of nu
 
 ## Complete setup/installation instructions:
 
-* [Live site](https://smita-raj12.github.io/Roboger-Neighborhood 
-       to my project       
+* Go to my project       
 
 * Clone this repository to your desktop.
 
