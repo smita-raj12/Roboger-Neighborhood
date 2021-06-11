@@ -100,7 +100,7 @@ This a web application that takes a number from a user and returns a range of nu
 
 ##
 
-- *Test: Number contains "32" it should replace with "Won't you be
+- *Test*: Number contains "32" it should replace with "Won't you be
        my neighbor"        
 - *code*: beepBoop(32)
 - *Expected Output*: "0,"Beep","Boop",Won't you be my neighbor",4,5,6------,"Won't you be my neighbor

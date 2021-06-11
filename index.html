@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-  <title> Mr. Roboger's Neighborhood</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/scripts.js"></script>
-</head>
-<body>
-  <div class="container">
-    <h1>Mr. Roboger's Neighborhood</h1>
+  <head>
+    <title> Mr. Roboger's Neighborhood</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Mr. Roboger's Neighborhood</h1>
       <form id="formRoger">
         <h3>Type any Number to see Mr. Roboger's message:</h3>
         <div class="form-group form-class">
           <div class="row justify-content-center">
             <div class="col-4">
               <label for="num">Type any number:</label>
-                <input id="num" class="form-control" type="text">
+              <input id="num" class="form-control" type="text">
             </div>
           </div>
         </div>  
@@ -27,7 +27,18 @@
           <div class="card">
             <div class="card-body">
               <h4 class="card-text">
-                Mr. Roboger's says:<br><span class="output"></span>
+                Mr. Roboger's says:<br><span id="output"></span>
+              </h4>
+            </div>
+          </div>      
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-text">
+                Mr. Roboger's says in Reverse:<br><span id="Routput"></span>
               </h4>
             </div>
           </div>      
