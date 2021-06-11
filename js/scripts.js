@@ -24,11 +24,13 @@ function beepBoop(userNum){
 
 function beepBoopReverse(userNum){
   let outputStrArray = [];
-  for (let i = userNum.length-1; i >= 0 ; i--){
-    let strNum= i.toString();
-    let strNumArray=strNum.split("");
+  for (let i = userNum; i >= 0; i--){
+    let strNum = i.toString();
+    let strNumArray = strNum.split("");
     let outputStr = " "
-    
+
+    if(outputStr = strNumArray.toString()){
+       
     if(strNumArray.includes("3")){
       outputStr = `"Wont you be my neighbor?"` 
     }
@@ -36,14 +38,12 @@ function beepBoopReverse(userNum){
       outputStr = `"Boop!"`
     }
     else if(strNumArray.includes("1")){
-      outputStr = `"Beep!"` 
+      outputStr = `"Beep"` 
     }
-    else {
-      outputStr = strNumArray.toString();
-    }
+    }  
     outputStrArray.push(outputStr)
     console.log("outputStrArray",outputStrArray,userNum);
-  }
+}
   return outputStrArray.join(  "  ,  "  )
 }
 
