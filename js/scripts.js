@@ -1,49 +1,46 @@
-function beepBoop(userNum){
-  let outputStrArray = [];
-  for (let i = 0; i <= userNum ; i++){
-    let strNum= i.toString();
-    let strNumArray=strNum.split("");
-    let outputStr = " "
+function isNumber(userNum){
+  return (isNaN(userNum) === 0 || userNum.length === 0)
+}
+
+function beepBoop(i){
+  let strNum= i.toString();
+  let strNumArray=strNum.split("");
+  let outputStr = " "
     
-    if(strNumArray.includes("3")){
-      outputStr = `"Wont you be my neighbor?"` 
-    }
-    else if(strNumArray.includes("2")){
-      outputStr = `"Boop!"`
-    }
-    else if(strNumArray.includes("1")){
-      outputStr = `"Beep!"` 
-    }
-    else {
-      outputStr = strNumArray.toString();
-    }
+  if(strNumArray.includes("3")){
+      return outputStr = `"Wont you be my neighbor?"` 
+  }
+  else if(strNumArray.includes("2")){
+    return  outputStr = `"Boop!"`
+  }
+  else if(strNumArray.includes("1")){
+    return  outputStr = `"Beep!"` 
+  }
+  else {
+    return outputStr = strNumArray.toString();
+  }
+}
+
+function ForwardLoop(userNum){
+  if (!isNumber(userNum)){
+    return " "
+  }
+  let outputStrArray = [];
+
+  for ( i = 0; i <= userNum ; i++){
+    let outputStr=beepBoop(i,outputStrArray)
     outputStrArray.push(outputStr)
   }
   return outputStrArray.join(  "  ,  "  )
 }
 
-function beepBoopReverse(userNum){
+function ReverseLoop(userNum){
   let outputStrArray = [];
   for (let i = userNum; i >= 0; i--){
-    let strNum = i.toString();
-    let strNumArray = strNum.split("");
-    let outputStr = " "
-
-    if(outputStr = strNumArray.toString()){
-       
-    if(strNumArray.includes("3")){
-      outputStr = `"Wont you be my neighbor?"` 
-    }
-    else if(strNumArray.includes("2")){
-      outputStr = `"Boop!"`
-    }
-    else if(strNumArray.includes("1")){
-      outputStr = `"Beep"` 
-    }
-    }  
+    let outputStr=beepBoop(i,outputStrArray)
     outputStrArray.push(outputStr)
-    console.log("outputStrArray",outputStrArray,userNum);
-}
+    console.log("forwardloop",outputStrArray)
+  }  
   return outputStrArray.join(  "  ,  "  )
 }
 
@@ -51,8 +48,8 @@ $(document).ready(function() {
   $("#formRoger").submit(function(event){
     event.preventDefault();
     const UserNum = $("input#num").val();
-    const BeepBoop = beepBoop(UserNum)
-    const ReverseBeepBoop = beepBoopReverse(UserNum)
+    const BeepBoop = ForwardLoop(UserNum)
+    const ReverseBeepBoop = ReverseLoop(UserNum)
     $("#output").html(BeepBoop);
     $("#Routput").html(ReverseBeepBoop);
   });
