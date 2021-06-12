@@ -6,13 +6,14 @@ Mr. Roboger's Neighborhood
 
 Smita   
 
-## Brief description of the project:
+## Description of the project:
 
 This a web application that takes a number from a user and returns a range of numbers from 0 to the user inputted number with the following exceptions:
 
 1. Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
 2. Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
 3. Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"
+4. All message displays in Forwarding direction and Backward direction.
 
 ## Live Site:
 
@@ -100,7 +101,7 @@ This a web application that takes a number from a user and returns a range of nu
 
 ##
 
-- *Test: Number contains "32" it should replace with "Won't you be
+- *Test*: Number contains "32" it should replace with "Won't you be
        my neighbor"        
 - *code*: beepBoop(32)
 - *Expected Output*: "0,"Beep","Boop",Won't you be my neighbor",4,5,6------,"Won't you be my neighbor
